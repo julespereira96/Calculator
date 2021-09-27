@@ -1,0 +1,197 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #0b0c10;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  font-size: 1.5rem;
+  padding: 1rem 1.5rem;
+  align-items: center;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger.active {
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10rem;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    right: 10px;
+    top: -79px;
+    position: absolute;
+    background: url(https://i.ibb.co/HrfVRcx/menu.png) no-repeat;
+  }
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: #0b0c10;
+  z-index: 1;
+}
+
+.list {
+  padding: 1rem 1.5rem;
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+  color: #66fcf1;
+}
+
+#result {
+  width: 100%;
+  padding-top: 50px;
+  box-sizing: border-box;
+  text-align: right;
+  font-size: 3rem;
+  color: white;
+  background-color: #1f2833;
+  border-radius: 5px;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 2rem 10rem;
+}
+
+.title {
+  margin-top: 100px;
+  width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.button,
+.button-operator {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border: solid black 2px;
+  width: 100%;
+  background-color: #1f2833;
+  color: #66fcf1;
+  font-size: 2rem;
+}
+
+.button:hover,
+.button-operator:hover {
+  background-color: #0b0c10;
+  cursor: pointer;
+}
+
+.button-operator {
+  color: #dc6869;
+}
+
+.butt {
+  width: 100px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.factorialInput {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.input {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #66fcf1;
+}
+
+.factorialButton {
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.endingInput {
+  margin-left: 20px;
+}
+
+.showTables {
+  padding: 5px;
+}
+input[type="text"] {
+  text-align: center;
+  background-color: white;
+  border-color: black;
+}
+
+.box,
+.box-1 {
+  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 80vh;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.output,
+.output-value,
+.output-series,
+.table-output {
+  text-align: center;
+  color: #66fcf1;
+}
+
+.startingInput {
+  padding: 5px;
+}
+
+table {
+  background-color: white;
+}
+
+h3 {
+  color: #66fcf1;
+}

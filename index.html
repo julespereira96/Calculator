@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="sticky">
+      <ul class="nav-menu">
+        <li class="list"><img src="calculator.png" alt="calculator"></li>
+        <li class="list"><h3>CALCULATOR</h3></li>
+        <li class="list"><a class="link home" href="#">HOME</a></li>
+        <li class="list"><a class="link tables" href="#">TABLES</a></li>
+        <li class="list">
+          <a class="link factorial" href="#">FACTORIAL</a>
+        </li>
+      </ul>
+      <div class="hamburger"></div>
+    </nav>
+
+    <div class="title">
+      <table >
+        <tr>
+          <td colspan="4"><input type="text" id="result" /></td>
+        </tr>
+        <tr>
+          <td>
+            <input class="button" type="button" onclick="dis('1')" value="1" />
+          </td>
+          <td>
+            <input class="button" type="button" onclick="dis('2')" value="2" />
+          </td>
+          <td>
+            <input class="button" type="button" onclick="dis('3')" value="3" />
+          </td>
+          <td>
+            <input class="button-operator" type="button" onclick="dis('/')" value="/" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="button" type="button" onclick="dis('4')" value="4" />
+          </td>
+          <td>
+            <input class="button" type="button" onclick="dis('5')" value="5" />
+          </td>
+          <td>
+            <input class="button" type="button" onclick="dis('6')" value="6" />
+          </td>
+          <td>
+            <input class="button-operator" type="button" onclick="dis('-')" value="-" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="button" type="button" onclick="dis('7')" value="7" />
+          </td>
+          <td>
+            <input class="button" type="button" onclick="dis('8')" value="8" />
+          </td>
+          <td>
+            <input class="button" type="button" onclick="dis('9')" value="9" />
+          </td>
+          <td>
+            <input class="button-operator" type="button" onclick="dis('+')" value="+" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <input class="button" type="button" onclick="dis('.')" value="." />
+          </td>
+          <td>
+            <input class="button" type="button" onclick="dis('0')" value="0" />
+          </td>
+          <td>
+            <input class="button-operator" type="button" onclick="solve()" value="=" />
+          </td>
+          <td>
+            <input class="button-operator" type="button" onclick="dis('*')" value="*" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <input
+              type="button"
+              class="button"
+              onclick="clr()"
+              value="CLR"
+              style="width: 100%"
+            />
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class="box d-none">
+      <h1 class="heading">FACTORIAL SERIES</h1>
+      <div class="input">
+        <input
+          type="text"
+          class="factorialInput"
+          name="factorial"
+          placeholder="Input"
+        />
+        <input class="factorialButton" type="button" value="SHOW FACTORIAL" />
+      </div>
+      <p>
+        <h2 class="output">The factorial of the number is</h2>
+        <h2 class="output-series"></h2>
+        <h2 class="output">=</h2>
+        <h2 class="output-value"></h2>
+      </p>
+    </div>
+    <div class="box-1 d-none ">
+      <h1 class="heading">MULTIPLICATION TABLE</h1>
+      <div class="input">
+        <input
+          type="text"
+          class="startingInput"
+          placeholder="Starting number"
+        />
+        <input
+          type="text"
+          class="endingInput"
+          placeholder="Ending number"
+        />
+      </div>
+      <input class="showTables" type="button" value="SHOW TABLES" />
+      <p>
+        <h2 class="table-output"></h2>
+      </p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
